@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    </meta>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    </meta>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/input-clear-icon@0.2.1/input-clear-icon.regular.min.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="icon" sizes="192x192" href="./assets/img/logo.png">
+    <link rel="apple-touch-icon" href="ios-icon.png">
+    <link rel="apple-touch-startup-image" href="./assets/img/logo.png">
+    <meta name="msapplication-square310x310logo" content="icon_largetile.png">
+    <meta name="theme-color" content="#050B2B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Taux d'évolution</title>
+</head>
+
+<body>
+    <div class="center" id="header">
+        <h1>Evolutor</h1>
+        <h2>Calcul du taux d'évolution</h2>
+    </div>
+
+    <form action="" class="form w-100" id="formSubmit">
+
+        <input step="0.01" min="0" lang="fr" type="number" id="firstValue"
+            class="input-clear-icon form-control value w-30" pattern="^\d+(.\d{1,2})?$" placeholder="Taux 1">
+        <span class="icon"></span>
+
+        <input step="0.01" min="0" lang="fr" type="number" id="secondValue"
+            class="input-clear-icon form-control value w-30" pattern="^\d+(.\d{1,2})?$" placeholder="Taux 2">
+        <!-- <span class="icon"></span> -->
+
+    </form>
+    
+    <div id="content" class="w-100">        
+    </div>
+    
+    <div class="evolution hideIt" id="result">
+        <p id="result"></p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/input-clear-icon@0.2.1/input-clear-icon.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
